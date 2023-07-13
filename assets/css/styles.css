@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+/* 'Open Sans', sans-serif; */
+/* 'Poppins', sans-serif; */
 
 :root {
    --font-tittle: 'Poppins', sans-serif;
-   --font-paragraphs: 'Open Sans', sans-serif;
-   --font-buttons: 'Open Sans', sans-serif;
+   --font-paragraphs: 'Poppins', sans-serif;
+   --font-buttons: 'Poppins', sans-serif;
    --font-menu-nav: 'Poppins', sans-serif;
    --font-logo: 'Poppins', sans-serif;
 
@@ -35,16 +37,16 @@
 
 h1, h2, h3 {
    font-family: var(--font-tittle);
-   font-weight: 700;
+   font-weight: 600;
    color: var(--color-titles);
 }
 
 h1 {
-   font-size: 2.3em;
+   font-size: 2.2em;
 }
 
 h2 {
-   font-size: 2em;
+   font-size: 1.8em;
 }
 
 h3 {
@@ -53,8 +55,8 @@ h3 {
 
 p {
    font-family: var(--font-paragraphs);
-   font-size: 1.2em;
-   font-weight: 500;
+   font-size: 1.1em;
+   font-weight: 400;
    color: var(--color-paragraphs);
 }
 
@@ -114,8 +116,8 @@ p {
    background-color: var(--color-buttons);
    border-radius: 10px;
    color: var(--color-links-nav-bar);
-   font-weight: 600;
-   font-size: 1.2em;
+   font-weight: 500;
+   font-size: 1.1em;
    font-family: var(--font-buttons);
    display: flex;
    align-items: center;
@@ -168,7 +170,7 @@ p {
 }
 
 .header-top .menu-nav-bar ul li a {
-   font-size: 1.2em;
+   font-size: 1.1em;
    color: var(--color-links-nav-bar);
    font-weight: 500;
 }
@@ -293,7 +295,7 @@ p {
    width: 100%;
    padding: .8em;
    font-family: var(--font-paragraphs);
-   font-size: 1.2em;
+   font-size: 1.1em;
    font-weight: 500;
    border-radius: 10px;
 }
@@ -381,14 +383,14 @@ p {
    border: 3px solid #000;
    border-radius: 15px;
    transition: all .2s;
+   cursor: pointer;
 }
 
 .faq-box-item .question {
    display: flex;
    align-items: center;
    gap: .7em;
-   padding: 1.5em;
-   cursor: pointer;
+   padding: 1em;
 }
 
 .faq-box-item .question i {
@@ -398,17 +400,21 @@ p {
 }
 
 .faq-box-item .question p {
-   font-size: 1.3em;
-   font-weight: 600;
+   font-size: 1.2em;
+   font-weight: 500;
 }
 
 .faq-box-item .answer {
    border-top: 3px solid #000;
-   padding-top: 1.5em;
-   margin: 0 1.5em 1.5em 1.5em;
+   padding-top: 1em;
+   margin: 0 1em 1em 1em;
    display: none;
    animation: animate .2s linear backwards;
    transform-origin: top;
+}
+
+.faq-box-item .answer p {
+   font-size: 1em;
 }
 
 /* Faq box activated */
@@ -463,6 +469,12 @@ p {
    width: 100%;
 }
 
+.footer-content .left-content-footer {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
 .footer-links .logo .logo-text {
    color: var(--color-contrast);
 }
@@ -471,11 +483,36 @@ p {
    color: var(--color-buttons-hover);
 }
 
+.left-content-footer .address-footer {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5em;
+}
+
+.address-footer .address-footer-box {
+   display: flex;
+   align-items: center;
+   gap: 1em;
+}
+
+.address-footer-box i,
+.address-footer-box p {
+   color: var(--color-copryright-text);
+}
+
+.address-footer-box i {
+   font-size: 1.2em;
+}
+
+.address-footer-box p {
+   font-size: 1em;
+}
+
 .footer-links .footer-social-medias h4 {
    font-family: var(--font-tittle);
-   font-weight: 500;
+   font-weight: 400;
    color: var(--color-contrast);
-   font-size: 1.5em;
+   font-size: 1.4em;
    margin-bottom: 1.5em;
 }
 
@@ -496,6 +533,8 @@ p {
 .footer-copyright p {
    color: var(--color-copryright-text);
    text-align: center;
+   font-size: 1em;
+   font-weight: 400;
 }
 
 /* Responsive */
@@ -522,7 +561,8 @@ p {
    }
 
    .header-top .menu-nav-bar ul .btn-contact-menu-nav,
-   .header-top .menu-nav-bar ul li a {
+   .header-top .menu-nav-bar ul li a
+    {
       display: block;
       padding: 1em 0;
    }
