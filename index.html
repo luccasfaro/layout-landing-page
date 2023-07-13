@@ -17,12 +17,12 @@
 <body>
    <header class="header-top">
       <nav class="menu-nav-bar">
-         <div class="logo">
+         <a href="#" class="logo">
             <img src="assets/img/advocacia-logo-site.png" alt="Lorem">
-            <span class="logo-text"></span>
-         </div>
+            <span class="logo-text">Lorem Advocacia</span>
+         </a>
 
-         <div class="menu-trigger">
+         <div class="menu-trigger" onclick="menuShow()">
             <i class="bi bi-list"></i>
          </div>
 
@@ -30,7 +30,7 @@
             <li><a href="">Início</a></li>
             <li><a href="">Serviços</a></li>
             <li><a href="">Sobre nós</a></li>
-            <li><a href="" class="btn-contact-menu-nav"></a></li>
+            <li><a href="" class="btn-contact-menu-nav">Contato</a></li>
          </ul>
       </nav>
    </header>
@@ -57,7 +57,7 @@
             <p>Em nosso escritório de advocacia, nos dedicamos a fornecer serviços jurídicos abrangentes e de alta qualidade para atender às diversas necessidades legais de nossos clientes. Nossa atuação abrange uma ampla gama de áreas do direito, algumas das principais áreas em que trabalhamos incluem:</p>
          </div>
 
-         <div class="services box">
+         <div class="services-box">
             <div class="box-item">
                <img src="assets/img/direito-civil-icon.png" alt="">
                <h3>Direito Civil</h3>
@@ -103,7 +103,7 @@
                <h2>Independentemente da sua necessidade legal, estamos prontos para fornecer orientação especializada e serviços de advocacia dedicados.</h2>
                <p>Preencha o formulário ao lado para que possamos entrar em contato, ou nos chame via whatsapp.</p>
                <div class="btn-contact">
-                  <a href="#">Fale conosco<i class="bi bi-whatsapp"></i></a>
+                  <a href="#">Consulte-nos via whatsapp<i class="bi bi-whatsapp"></i></a>
                </div>
             </div>
 
@@ -121,7 +121,7 @@
                </div>
  
                <div class="form-group">
-                  <input type="text" name="mensagem" id="idMensagem" placeholder="Sua mensagem">
+                  <textarea type="text" name="mensagem" id="idMensagem" rows="6" placeholder="Sua mensagem"></textarea>
                </div>
  
                <button class="btn-form" type="submit">Enviar</button>
@@ -154,7 +154,7 @@
                </div>
 
                <div class="btn-contact">
-                  <a href="#">Fale conosco<i class="bi bi-whatsapp"></i></a>
+                  <a href="#">Quero falar com um profissional<i class="bi bi-whatsapp"></i></a>
                </div>
             </div>
          </div>
@@ -186,43 +186,37 @@
          <div class="faq-box-items">
             <div class="faq-box-item">
                <div class="question">
-                  <i class="bi bi-plus-lg"></i>
+                  <i class="bi bi-chevron-down"></i>
                   <p>Como funciona a contratação?</p>
                </div>
                <div class="answer">
                   <p>É super simples! Você entra em contato conosco pelo WhatsApp ou pelo formulário disponível no site e nossa equipe irá analisar minuciosamente a sua questão e retornará com um breve parecer preliminar e uma proposta de prestação de serviços.</p>
                </div>
             </div>
-         </div>
 
-         <div class="faq-box-items">
             <div class="faq-box-item">
                <div class="question">
-                  <i class="bi bi-plus-lg"></i>
+                  <i class="bi bi-chevron-down"></i>
                   <p>Quanto tempo uma ação judicial dura em média?</p>
                </div>
                <div class="answer">
                   <p>Não há como prever isso. Há casos resolvidos rapidamente através de acordos. Outros vão até a última instância de cada procedimento… Então não há como prever. Fora que as Varas são diferentes no quesito “celeridade”.</p>
                </div>
             </div>
-         </div>
 
-         <div class="faq-box-items">
             <div class="faq-box-item">
                <div class="question">
-                  <i class="bi bi-plus-lg"></i>
+                  <i class="bi bi-chevron-down"></i>
                   <p>O escritório de vocês é legalizado?</p>
                </div>
                <div class="answer">
                   <p>Claro! Temos nosso CNPJ inscrito sob o Nº 25.080.535/0001-40 e nosso registro na Ordem dos Advogados do Brasil é o 574/2016/AM. Nossos sócios são os Dres. Jéssica Santana Magnani de Melo (OAB/AM 10.343) e David Cunha Novoa (OAB/AM 10.777), e nossa gestora jurídica é a Dra. Jennifer Guimarães da Silva (OAB/AM 13.314).</p>
                </div>
             </div>
-         </div>
 
-         <div class="faq-box-items">
             <div class="faq-box-item">
                <div class="question">
-                  <i class="bi bi-plus-lg"></i>
+                  <i class="bi bi-chevron-down"></i>
                   <p>Minha causa é ganha?</p>
                </div>
                <div class="answer">
@@ -236,10 +230,10 @@
    <footer id="footer">
       <div class="footer-content">
          <div class="footer-links">
-            <div class="footer-left-content">
+            <a href="#" class="logo">
                <img src="assets/img/advocacia-logo-site.png" alt="">
-               <h4>Lorem Advocacia</h4>
-            </div>
+               <span class="logo-text">Lorem Advocacia</span>
+            </a>
             <div class="footer-social-medias">
                <h4>Redes sociais</h4>
                <div class="social-media-icons">
@@ -251,10 +245,11 @@
          </div>
 
          <div class="footer-copyright">
-            <p>2023 © Lorem Advocacia - Todos os direitos reservados./p>
+            <p>2023 © Lorem Advocacia - Todos os direitos reservados.</p>
          </div>
       </div>
    </footer>
 
+   <script src="assets/js/script.js"></script>
 </body>
 </html>
