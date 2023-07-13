@@ -15,8 +15,12 @@ let faqs = document.querySelectorAll('.faq-box-item');
 
 faqs.forEach(faq => {
    faq.onclick = () => {
-      faqs.forEach(subFaq => { subFaq.classList.remove('active')});
-      faq.classList.add('active');
+      if(faq.classList.contains('active')) {
+         faq.classList.remove('active');
+      } else {
+         faqs.forEach(subFaq => { subFaq.classList.remove('active')});
+         faq.classList.add('active');
+      }
    }
 })
 

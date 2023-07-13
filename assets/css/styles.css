@@ -236,11 +236,22 @@ p {
    gap: 1.5em;
    padding: 1.5em;
    text-align: center;
+   transition: all .2s;
+}
+
+.services .services-box .box-item:hover {
+   background-color: var(--color-contrast);
+   border-color: #000;
 }
 
 .box-item img {
    /* margin-bottom: auto; */
    width: 70px;
+}
+
+.box-item h4,
+.box-item p {
+   cursor: default;
 }
 
 .box-item p {
@@ -369,6 +380,7 @@ p {
    flex-direction: column;
    border: 3px solid #000;
    border-radius: 15px;
+   transition: all .2s;
 }
 
 .faq-box-item .question {
@@ -382,6 +394,7 @@ p {
 .faq-box-item .question i {
    font-size: 1.7em;
    color: var(--color-contrast);
+   transition: all .2s;
 }
 
 .faq-box-item .question p {
@@ -396,6 +409,18 @@ p {
    display: none;
    animation: animate .2s linear backwards;
    transform-origin: top;
+}
+
+/* Faq box activated */
+
+.faq-box-item:hover,
+.faq-box-item.active {
+   background-color: var(--color-contrast);
+}
+
+.faq-box-item:hover i,
+.faq-box-item.active i {
+   color: #000;
 }
 
 .faq-box-item.active .question i {
@@ -440,6 +465,10 @@ p {
 
 .footer-links .logo .logo-text {
    color: var(--color-contrast);
+}
+
+.footer-links .logo:hover .logo-text {
+   color: var(--color-buttons-hover);
 }
 
 .footer-links .footer-social-medias h4 {
