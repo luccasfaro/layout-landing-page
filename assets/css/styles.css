@@ -10,7 +10,7 @@
    --font-logo: 'Poppins', sans-serif;
 
    --color-titles: #000;
-   --color-paragraphs: #000;
+   --color-paragraphs: #3a3a3a;
    --color-buttons: #C7A857;
    --color-buttons-hover: #977d3c;
    --color-links-nav-bar: #000;
@@ -32,7 +32,10 @@
    list-style-type: none;
    border: none;
    text-decoration: none;
+}
 
+html {
+   scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
